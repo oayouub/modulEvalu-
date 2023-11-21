@@ -4,10 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <div class="dark:bg-secondary-dark bg-blue-200 h-screen">
+    <button
+    id="theme-toggle"
+    class=" absolute top-5 left-[600px] p-2 rounded-full text-white bg-slate-900 dark:text-slate-900 dark:bg-white"
+>
+    Toggle theme
+</button>
+  <div class="w-full p-5 flex justify-center content-center">
+    <div class="w-96 dark:bg-secondary-dark2 bg-primary pt-10 p-3 rounded-2xl">
+    <!--navbar-->
+        <div class="flex justify-between items-center content-center">
+            <iconify-icon class="dark:text-primary dark:bg-secondary-lightDark bg-white rounded-full p-3" width="25px" icon="iconamoon:menu-burger-horizontal"></iconify-icon>
+            <div class="dark:bg-secondary-lightDark bg-white rounded-3xl pl-3 pt-2 pb-2 pr-1 font-semibold flex justify-center items-center content-center space-x-2   ">
+                <h2 class="dark:text-primary">Take The Quiz</h2>
+                <iconify-icon class="bg-black dark:bg-primary text-primary dark:text-black rounded-full p-2" width="20px" icon="bx:link"></iconify-icon>
+            </div>
+            <img src="./assets/albert-dera-ILip77SbmOE-unsplash.jpg" class="w-12 h-12 overflow-hidden rounded-full" alt="">
+        </div>
+    <!--slogan-->
+        <div class="flex justify-center items-center content-center pt-5">
+            <h2 class="dark:text-primary text-titre leading-tight pb-4">Simplify your health <span class="inline-block ml-2">
+                    <div class="w-10 h-10">
+                        <svg viewBox="0 0 35.4113 67.2004" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 100%; height: 100%;">
+                            <rect x="0.255737" y="0.52829" width="35.4113" height="65.2004" rx="17.7057" fill="#D9EAFD"
+                                transform="rotate(15)" />
+                        </svg>
+                    </div>
+                </span>and wellbeing. <span class="inline-block ml-2 align-middle">
+                    <div class="w-12 h-12">
+                        <svg viewBox="0 0 70.7011 70.7011" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 100%; height: 100%;">
+                            <rect x="0.61084" y="30.7361" width="70.7011" height="9.79788" rx="4.89894" fill="#FEF189" />
+                            <rect x="40.8604" y="0.533691" width="70.7011" height="9.79788" rx="4.89894"
+                                transform="rotate(90 40.8604 0.533691)" fill="#FEF189" />
+                            <rect x="15.977" y="15.8999" width="39.9687" height="39.9687" rx="19.9844" fill="#FEF189" />
+                        </svg>
+                    </div>
+                </span></h2>
+        </div>
+    <!--capsule-->
+        <div class="bg-white dark:bg-secondary-lightDark rounded-xl relative">
+            <div class="dark:bg-secondary-dark2 dark:border-secondary-lightDark text-black dark:text-primary absolute top-5 right-5 p-2 border border-solid border-black rounded-full flex justify-center items-center content-center"><iconify-icon icon="ic:sharp-plus" width="25px"></iconify-icon></div>
+            <ul class="flex space-x-2 content-center items-center p-3">
+                <li class="dark:bg-secondary-dark2 dark:text-primary border-2  border-solid dark:border-secondary-lightDark border-gray-300 p-2 pl-4 pr-4 rounded-3xl">About</li>
+                <iconify-icon class="dark:bg-secondary-dark2 dark:text-primary text-black bg-white border-2  border-solid dark:border-secondary-lightDark border-gray-300 rounded-full p-2" width="20px" icon="bx:link"></iconify-icon>
+            </ul>
+            <p class="dark:text-primary p-3 text-[1.2rem]">Receive daily packs personalized to your <strong>unique health needs.</strong></p>
+            <div class="h-52 overflow-hidden relative rounded-bl-xl rounded-br-xl mt-2">
+                <ul class="dark:bg-secondary-lightDark space-x-2 absolute bottom-3 left-3 bg-white rounded-full p-2 flex justify-center items-center content-center">
+                    <li class="text-black dark:text-primary p-2 border  border-solid dark:border-primary border-black rounded-full flex justify-center items-center content-center "><iconify-icon icon="solar:cup-outline" width="20px"></iconify-icon></li>
+                    <li class="text-black dark:text-primary p-2 border  border-solid dark:border-primary border-black rounded-full flex justify-center items-center content-center "><iconify-icon icon="material-symbols-light:cycle" width="20px"></iconify-icon></li>
+                    <li class="text-black dark:text-primary p-2 border  border-solid dark:border-primary border-black rounded-full flex justify-center items-center content-center "><iconify-icon icon="ph:leaf-light" width="20px"></iconify-icon></li>
+                </ul>
+                <img src="/src/assets/giorgio-trovato-PC5kB3fC1bM-unsplash.jpg" alt="">
+            </div>
+        </div>
+    <!--button-->
+        <div class="dark:bg-secondary-lightDark bg-black flex justify-between items-center content-center p-4 rounded-full mt-4 w-full">
+            <p class="text-primary text-sm pl-2" >Unlock <strong>personalized</strong> plan.</p>
+            <iconify-icon class="text-primary" icon="solar:arrow-up-outline" width="30px"rotate="90deg"></iconify-icon>
+        </div>
+    </div>
+  </div>
+  <script>
+    const btn = document.getElementById("theme-toggle");
+    btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+    });
+</script>
+</div>
 </body>
 </html>
